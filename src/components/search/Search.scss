@@ -1,0 +1,62 @@
+.container {
+  box-shadow: 5px 5px 55px -14px black;
+  border-radius: 4px;
+  padding: 25px;
+  background: #81d781;
+  width: 80%;
+  margin: 30px auto;
+  min-height: 100vh;
+
+  .navigate {
+    display: flex;
+    justify-content: center;
+
+    .link {
+      margin: 20px;
+      color: rgba(0, 0, 195, 0.82);
+      font-size: 26px;
+      text-decoration: none;
+    }
+  }
+
+  .inp {
+    width: 80%;
+    margin: 0 auto;
+
+    .searchContact {
+      width: 100%;
+      border-radius: 50px;
+      margin: 15px;
+      outline: none;
+      padding-left: 10px;
+      height: 30px;
+    }
+  }
+
+  .box {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .list {
+      width: 200px;
+      margin: 20px;
+
+      h3, li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+
+  .empty {
+    margin: 20px;
+  }
+
+  h3 {
+    display: flex;
+    justify-content: center;
+  }
+}

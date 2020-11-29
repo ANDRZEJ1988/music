@@ -1,56 +1,74 @@
-.darks {
-  width: 100%;
-  background-color: darkslategrey;
-  display: flex;
-}
-
 .container {
-  justify-content: space-around;
-  box-shadow: 5px 5px 115px -14px black;
+  box-shadow: 5px 5px 55px -14px black;
   border-radius: 4px;
-  padding: 15px;
-  margin: 15px;
-}
+  padding: 25px;
+  background: #81d781;
+  width: 80%;
+  margin: 30px auto;
 
-.movie {
-  height: 100%;
-  border: 1px solid;
-  border-radius: 5px;
+  .navigate {
+    display: flex;
+    justify-content: center;
 
-  &-img {
+    .link {
+      margin: 20px;
+      color: rgba(0, 0, 195, 0.82);
+      font-size: 26px;
+      text-decoration: none;
+    }
+  }
+
+  .cards {
+    margin-top: 20px;
     width: 100%;
-  }
+    border: 1px solid;
+    border-radius: 5px;
+    min-height: 100vh;
 
-  &-title {
-    text-align: center;
-    font-size: 26px;
-    color: white;
+    .divimage {
+      position: relative;
 
-    h3 {
-      color: black;
+      &-img {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+      }
     }
-  }
 
-  &-movie-gen {
+    &-title {
+      text-align: center;
+      position: relative;
+      box-sizing: border-box;
 
-    li {
-      font-family: 'Open Sans', sans-serif;
-      color: darken(#e7e7e7, 40%);
-      font-weight: 600;
+      h2 {
+        margin: 15px;
+      }
+
+      ul {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+
+        li {
+          display: flex;
+          font-family: 'Open Sans', sans-serif;
+          color: darken(#e7e7e7, 40%);
+          font-weight: 600;
+        }
+      }
+
+      .description {
+        margin: 40px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: justify;
+        line-height: 1.3;
+      }
     }
-  }
-
-  .movie-description {
-    margin: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: darken(white, 30%);
-    text-align: justify;
-    line-height: 1.3;
   }
 }
-
 
 
 
